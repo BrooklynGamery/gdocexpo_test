@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Devs of Color Expo (July 27, 2019 in NYC)</title>
+    <description>The Game Devs of Color Expo is an inclusive games expo and conference creating a new normal in games by putting creators of color at the forefront, showing off their games, building conversations, and pushing games forward as an artform.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 18 Apr 2019 00:21:02 -0700</pubDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:21:02 -0700</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+  </channel>
+</rss>
