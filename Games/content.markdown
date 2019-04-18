@@ -67,5 +67,3 @@ Want to do more? [Sponsor the event.](/sponsor)
 ----
 
 More information is coming soon. Subscribe to hear when we add new games, speakers, and more! We send emails less than once per week.
-
-{% include mailchimp-form.html %}
