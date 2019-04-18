@@ -1,0 +1,252 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    {% if page.title != 'home' %}
+    <h2>All are welcome</h2>
+    <p>Game Devs of Color Expo is open to people of all genders, races, and sexual orientations. Please let us know if there’s anything we can do to make you feel comfortable attending this event.</p>
+    <p>
+      <a href="/codeofconduct">Read our Code of Conduct</a>
+    </p>
+
+    <hr>
+    {% endif %}
+
+    {% if site.data.sponsors %}
+    <h2>Thanks to our 2019 sponsors!</h2>
+    {% assign sponsors = site.data.sponsors | where: 'level', 'Sustaining' %}
+    <h3>Sustaining Sponsor</h3>
+    <ul class="col-container sponsors-container">
+      {% for sponsor in sponsors %}
+      <li class="col-container">
+        {% if sponsor.logo %}
+        <p class="col-3">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="/assets/images/sponsors/2019/{{sponsor.logo}}" alt="{{sponsor.name}} logo" title="{{sponsor.name}}">
+          </a>
+        </p>
+        {% endif %}
+        <div class="col-3-2">
+          <p>
+            {{ sponsor.blurb }} <a href="{{ sponsor.link }}" target="_blank">Learn more on their website</a>.
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% assign sponsors = site.data.sponsors | where: 'level', 'Collaborating' %}
+    <h3>Collaborating Sponsor</h3>
+    <ul class="col-container sponsors-container">
+      {% for sponsor in sponsors %}
+      <li class="col-container">
+        {% if sponsor.logo %}
+        <p class="col-3">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="/assets/images/sponsors/2019/{{sponsor.logo}}" alt="{{sponsor.name}} logo" title="{{sponsor.name}}">
+          </a>
+        </p>
+        {% endif %}
+        <div class="col-3-2">
+          <p>
+            {{ sponsor.blurb }} <a href="{{ sponsor.link }}" target="_blank">Learn more on their website</a>.
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% assign sponsors = site.data.sponsors | where: 'level', 'Premium' %}
+    <h3>Premium Sponsor</h3>
+    <ul class="col-container sponsors-container">
+      {% for sponsor in sponsors %}
+      <li class="col-container">
+        {% if sponsor.logo %}
+        <p class="col-3">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="/assets/images/sponsors/2019/{{sponsor.logo}}" alt="{{sponsor.name}} logo" title="{{sponsor.name}}">
+          </a>
+        </p>
+        {% endif %}
+        <div class="col-3-2">
+          <p>
+            {{ sponsor.blurb }} <a href="{{ sponsor.link }}" target="_blank">Learn more on their website</a>.
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% assign sponsors = site.data.sponsors | where: 'level', 'Friend' %}
+    <h3>Friend Sponsor</h3>
+    <ul class="col-container sponsors-container">
+      {% for sponsor in sponsors %}
+	  
+      <li class="col-container">
+        {% if sponsor.logo %}
+        <p class="col-3">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="/assets/images/sponsors/2019/{{sponsor.logo}}" alt="{{sponsor.name}} logo" title="{{sponsor.name}}">
+          </a>
+        </p>
+        <p class="col-3">
+        Learn more about {{sponsor.name}} <a href="{{ sponsor.link }}" target="_blank">on their website</a>.
+        </p>
+        {% endif %}
+        {% unless sponsor.logo %}
+        <h4>
+          {{ sponsor.name }}
+        </h4>
+        <p class="col-3">
+          {{ sponsor.blurb }}
+        </p>
+        {% endunless %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% assign sponsors = site.data.sponsors | where: 'level', 'Community' %}
+    <h3>Community Sponsor</h3>
+    <ul class="col-container sponsors-container">
+      {% for sponsor in sponsors %}
+	  
+      <li class="col-container">
+        {% if sponsor.logo %}
+        <p class="col-3">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="/assets/images/sponsors/2019/{{sponsor.logo}}" alt="{{sponsor.name}} logo" title="{{sponsor.name}}">
+          </a>
+        </p>
+        <p class="col-3">
+        Learn more about {{sponsor.name}} <a href="{{ sponsor.link }}" target="_blank">on their website</a>.
+        </p>
+        {% endif %}
+        {% unless sponsor.logo %}
+        <h4>
+          {{ sponsor.name }}
+        </h4>
+        <p class="col-3">
+          {{ sponsor.blurb }}
+        </p>
+        {% endunless %}
+      </li>
+      {% endfor %}
+    </ul>
+	
+    {% endif %}
+
+    
+
+    {% if site.data.partners %}
+    <hr>
+
+    <h2>Community partners</h2>
+
+    <ul class="col-container">
+      {% for partner in site.data.partners %}
+      <li class="col-3">
+        <p>
+          <a href="{{ partner.link }}" target="_blank">
+            <img src="/assets/images/partners/2019/{{partner.logo}}" alt="{{partner.name}} logo" title="{{partner.name}}">
+          </a>
+        </p>
+        {% if partner.blurb %}
+        <p>
+          {{ partner.blurb }}
+        </p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <hr>
+
+    <h2>Event Organizers</h2>
+    <p>The 2019 Game Devs of Color Expo is produced by a diverse team of game creators and enthusiasts. We believe that games are for everyone and that the only path forward is to actively work to enable more games to be created by people of diverse backgrounds and get those games played by more people.</p>
+
+<ul class="col-container sponsors-container">
+<li class="col-3">
+<p>
+<img src="/assets/images/scholars/2019/ChrisAlgoo.jpg">
+Chris Algoo<br/>
+<a href="https://twitter.com/chrisalgoo?lang=en" target="_blank">@ChrisAlgoo</a><br/>
+<a href="http://ChrisAlgoo.com">ChrisAlgoo.com</a>
+</p>
+</li>
+
+<li class="col-3">
+<p>
+<img src="/assets/images/scholars/2019/ShawnAllen.jpg">
+Shawn Allen<br/>
+<a href="https://twitter.com/aNuChallenger" target="_blank">@aNuChallenger</a><br/>
+<a href="http://Nuchallenger.com">Nuchallenger.com</a>
+</p>
+</li>
+
+<li class="col-3">
+<p>
+<img src="/assets/images/speakers/2019/brian_carr.png">
+Brian Carr<br/>
+<a href="https://twitter.com/t3amBrian">@t3amBrian</a><br/>
+<a href="http://briancarr.com/" target="_blank">briancarr.com</a>
+</p>
+</li>
+</ul>
+
+<ul class="col-container sponsors-container">
+<li class="col-3">
+<p>
+<img src="/assets/images/scholars/2019/BrianSChung.jpg">
+Brian S. Chung<br/>
+<a href="https://twitter.com/BrianSChung" target="_blank">@BrianSChung</a><br/>
+<a href="https://thesheepsmeow.com" target="_blank">thesheepsmeow.com</a>
+</p>
+</li>
+
+<li class="col-3">
+<p>
+<img src="/assets/images/scholars/2019/GJLee.jpg">
+GJ Lee<br/>
+<a href="https://twitter.com/whereisgj" target="_blank">@whereisgj</a><br/>
+<a href="https://thesheepsmeow.com" target="_blank">thesheepsmeow.com</a>
+</p>
+</li>
+
+<li class="col-3">
+<p>
+<img src="/assets/images/speakers/2019/catt_small.jpg">
+Catt Small<br/>
+<a href="https://twitter.com/cattsmall" target="_blank">@cattsmall</a><br/>
+<a href="https://cattsmall.com/">cattsmall.com</a>
+</p>
+</li>
+</ul>
+
+<br/>
+<p>Very special thanks to the many contributors and volunteers who work on bringing the expo to life before, during, and after the day of the event.</p>
+  
+    <hr>
+
+    <h2>Press inquiries</h2>
+    <p>Here is our <a href="https://docs.google.com/document/d/1NZmFwCAOU9Ep4sQQaXfZjRRXJBLa7ne9koqfXR6UhhI/edit?usp=sharing">2019 Press Kit</a>.</p>
+    <p>All requests can be sent to gdocexpo@gmail.com. Professional photography and videography is prohibited on-site without consent from The GDoCE Organization Team and the attendees being recorded.</p>
+   
+     <hr>
+	  
+	<p align="center">
+	<a href="https://twitter.com/GDoCExpo">
+	<img src="/assets/images/icon-twitter-g.svg" width="16"/></a>
+	&nbsp; <a href="https://www.facebook.com/GDoCExpo/">
+	<img src="/assets/images/icon-fb-g.svg" width="16"/></a>
+	</p>
+
+  </div>
+
+</footer>
+<script src="{{ site.baseurl }}/js/fluidvids.js"></script>
+<script>
+  fluidvids.init({
+    selector: ['iframe'],
+    players: ['www.youtube.com', 'player.vimeo.com']
+  });
+</script>
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
